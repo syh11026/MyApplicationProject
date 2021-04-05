@@ -2,6 +2,7 @@ package com.example.myapplicationproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -50,7 +51,7 @@ public class RegisterActivity extends AppCompatActivity {
                             boolean success = jsonObject.getBoolean(name:"success");
                             if(success){//회원등록성공
                                 Toast.makeText(getApplicationContext(),text:"회원등록에 성공하였습니다.",Toast.LENGTH_SHORT.show();
-                                Internet internet = new Internet(packageContext RegisterActivity.this, LoginActivity.class);
+                                Intent internet = new Intent(packageContext RegisterActivity.this, LoginActivity.class);
                                 startActivity(intent);
                             }else{//회원등록실패
                                 Toast.makeText(getApplicationContext(),text:"회원등록에 실패하였습니다.",Toast.LENGTH_SHORT.show();
